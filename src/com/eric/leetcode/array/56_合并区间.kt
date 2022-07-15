@@ -72,7 +72,12 @@ fun reduce(intervals: MutableList<IntArray>): Boolean {
 fun printArr(intervals: List<IntArray>) {
     println("-------------------------------------")
     for (interval in intervals) {
-        print("[${interval[0]},${interval[1]}]")
+        print("[")
+        for (i in interval){
+            print("$i,")
+        }
+        print("]")
+        println("")
     }
     println("")
     println("-------------------------------------")
